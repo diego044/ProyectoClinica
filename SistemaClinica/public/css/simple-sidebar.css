@@ -3,6 +3,24 @@ body {
   overflow-x: hidden;
 }
 
+.ul-items li{
+  margin-left: 50px;
+  text-decoration: none;     
+}
+
+.ul-items li a{
+   font-size: 15px;
+}
+
+.menucon ul{
+  margin:  auto;
+  padding: 0;
+  /* border: 1px solid grey; */
+  
+}
+.menucon ul li {  
+  list-style: none;    
+}
 .menucon a {
   font-size: 18px;
  }
@@ -36,6 +54,19 @@ body {
   margin-left: 0;
 }
 
+.cabecera ul li{
+  margin-right: 100px;
+ 
+}
+
+.cabecera {
+  display: inline-block;
+  
+}
+.cabecera span{
+  padding: auto;
+  display: block;
+}
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;

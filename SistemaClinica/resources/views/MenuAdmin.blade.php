@@ -1,8 +1,12 @@
-
-@section('title', 'Menu')
 @extends('layouts.plantilla')
 
-@section('content')
+@section('title', 'Menu')
+
+@section('contenthead')
+    
+@endsection
+
+@section('contentbody')
 
 <br/>
 
@@ -91,12 +95,4 @@
         </div>
 </div>
 
-
-
-
-
-
-
-
-    
 @endsection

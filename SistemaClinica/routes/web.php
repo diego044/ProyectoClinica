@@ -19,3 +19,7 @@ Route::get('Menu', function () {
     return view('MenuAdmin');
 });
 
+Route::get('Horarios', function () {
+    return view('ProgramacionHorarios');
+});
+
