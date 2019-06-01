@@ -10,7 +10,7 @@
 
 <br/>
 
-<h1>ADMIN   |   MENÚ</h1>
+<h1>ADMIN | MENÚ</h1>
 
 <br/>
 
