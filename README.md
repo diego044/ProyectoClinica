@@ -1,2 +1,0 @@
-# ProyectoClinica
-ProyectoClinica
