@@ -26,8 +26,11 @@
 
           <!-- Sidebar -->
           <div class="border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading">
-               Start Bootstrap
+            <div class="sidebar-heading text-right">
+                <button type="button" id="menu-toggle" class="btn btn-info navbar-btn">
+                    <span class="fas fa-bars"></span>
+                    
+                </button> 
             </div>
             <div class="border list-group list-group-flush ">
               <div class="menucon">
@@ -36,8 +39,11 @@
                   </ul>
                   <ul>
                       <li  data-toggle="collapse" data-target="#items-medicos" >
-                          <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-user-md"></i>Medicos</a>
-                      </li>
+                          <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-user-md"></i>Medicos     
+                          <i class="fas fa-angle-down"></i>                
+                          </a>                       
+                     </li>
+                     
                       <ul class="collapse ul-items" id="items-medicos">                            
                             <li><a href="#" class="list-group-item list-group-item-action ">Nuevo Medico</a></li>
                             <li><a href="#" class="list-group-item list-group-item-action ">Administrar Medicos</a></li>                            
@@ -106,24 +112,28 @@
           <!-- Page Content/header -->
           <div id="page-content-wrapper">
             <!-- cabecera -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">                                   
-                  <ul>
-                    <li class="d-inline-block align-top">
-                        <button type="button" id="menu-toggle" class="btn btn-info navbar-btn">
-                            <span class="fas fa-bars"></span>
-                            <span>Contraer</span>
+                                  
+                {{-- navbar navbar-expand-lg navbar-light bg-light border-bottom           --}}
+                                                 
+                <div class="row border-bottom  mr-auto ml-auto">                   
+                    <div class="col-auto mr-auto" style="padding-top:14px; ">
+                        <button type="button" id="menu-toggle2" class="btn btn-info navbar-btn invisible">
+                            <span class="fas fa-bars"></span>             
                         </button> 
-                    </li>
-                    <li class="d-inline-block align-middle">
+                    </div>                  
+                    <div class="col-auto mr-auto" style="padding-top:14px;">
                         <h3>Sistema de Gestión Hospitalaria</h3>
-                    </li>
-                    <li class="d-inline-block lign-bottom">
-                        <img src="http://cdn.onlinewebfonts.com/svg/img_568657.png" width="30" height="30" class="" alt=""> 
+                    </div>
+                    <div class="col-auto" style="padding-top:3px;">
+                        <img src="http://cdn.onlinewebfonts.com/svg/img_568657.png" width="40" class="mr-1" alt=""> 
                         <label>Gonzalo Ramirez Melgarejo</label>  
-                        <span>Administrador</span>                  
-                      </li>
-                  </ul>                                                     
-            </nav>       
+                        <span class="text-center d-block m-auto" style="width: 50%;">Administrador</span>   
+                    </div>
+                  </nav> 
+                </div>                                                   
+            
+            
+            
 
             <!-- Contenido -->
             <div class="container-fluid">              
