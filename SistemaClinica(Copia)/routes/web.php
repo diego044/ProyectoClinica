@@ -15,8 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('adminmenu', function () {
     return view('MenuAdmin');
+<<<<<<< HEAD
 })-> name('menuadmin');
 
 // Horarios
@@ -41,6 +43,29 @@ Route::get('adminempleados/detalle', function () {
 Route::get('adminempleados/editar', function () {
     return view('AdminEditarEmpleado');
 })-> name('editarempleados');
+=======
+});
+
+Route::get('adminhorarios', function () {
+    return view('AdministrarHorarios');
+});
+
+Route::get('adminmedicos', function () {
+    return view('AdministrarHorarios');
+});
+
+Route::get('adminpacientes', function () {
+    return view('AdministrarPaciente');
+});
+
+Route::get('adminmedico', function () {
+    return view('AgregarMedico');
+});
+
+Route::get('adminhorarios/programacionhorarios', function () {
+    return view('programacionhorarios');
+});
+>>>>>>> gonzalo
 
 
 
