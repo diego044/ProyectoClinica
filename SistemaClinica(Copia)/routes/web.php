@@ -15,30 +15,32 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::get('adminmenu', function () {
     return view('MenuAdmin');
-});
+})-> name('menuadmin');
 
-Route::get('adminhorarios', function () {
-    return view('AdministrarHorarios');
-});
+// Horarios
 
-Route::get('adminmedicos', function () {
-    return view('AdministrarHorarios');
-});
+Route::get('adminhorarios/programacion', function () {
+    return view('AdminProgramacionHorarios');
+})-> name('programacionhorarios');
 
-Route::get('adminpacientes', function () {
-    return view('AdministrarPaciente');
-});
+// Empleados
+Route::get('adminempleados/administrar', function () {
+    return view('AdminAdministrarEmplados');
+})-> name('administrarempleados');
 
-Route::get('adminmedico', function () {
-    return view('AgregarMedico');
-});
+Route::get('adminempleados/nuevo', function () {
+    return view('AdminNuevoEmpleado');
+})-> name('nuevoempleados');
 
-Route::get('adminhorarios/programacionhorarios', function () {
-    return view('programacionhorarios');
-});
+Route::get('adminempleados/detalle', function () {
+    return view('AdminDetalleEmplados');
+})-> name('detalleempleados');
+
+Route::get('adminempleados/editar', function () {
+    return view('AdminEditarEmpleado');
+})-> name('editarempleados');
 
 
 

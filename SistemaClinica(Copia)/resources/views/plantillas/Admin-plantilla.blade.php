@@ -34,11 +34,10 @@
                 <div class="border list-group list-group-flush ">
                     <div class="menucon">
                         <ul >
-                            <li class="list-group-item list-group-item-action  ">
-                                <a href="#" id="" class="list-group-item-action" >
-                                    <i class="fas fa-home"></i>Inicio
-                                </a>   
-                            </li> 
+                            <a href="{{route('menuadmin')}}" id="" class="list-group-item-action list-group-item list-group-item-action " >
+                                <i class="fas fa-home"></i>Inicio
+                            </a>   
+                            
                         </ul>
 
                         <ul>
@@ -71,7 +70,7 @@
                             </li>                                        
                             
                             <ul class="collapse ul-items "  id="items-horarios">                            
-                                <li><a href="#" class="list-group-item list-group-item-action border-left">Programar Horario</a></li>
+                                <li><a href="{{route('programacionhorarios')}}" class="list-group-item list-group-item-action border-left">Programar Horario</a></li>
                                 <li><a href="#" class="list-group-item list-group-item-action border-left">Administrar Horarios</a></li>                            
                             </ul>
                         </ul>
@@ -125,6 +124,19 @@
                             <ul class="collapse ul-items "  id="items-medicamentos">                            
                                 <li><a href="#" class="list-group-item list-group-item-action border-left">Nuevo Medicamento</a></li>
                                 <li><a href="#" class="list-group-item list-group-item-action border-left">Administrar Medicamentos</a></li>                            
+                            </ul>
+                        </ul>
+
+                        <ul>
+                            <li class="list-group-item list-group-item-action d-flex" data-toggle="collapse" data-target="#items-Empleados" >
+                                <i class="fas fa-user-tie"></i>
+                                Empleados
+                                <i class="fas fa-angle-down ml-auto bd-highligh" ></i>      
+                            </li>                                       
+                            
+                            <ul class="collapse ul-items "  id="items-Empleados">                            
+                                <li><a href="{{route('nuevoempleados')}}" class="list-group-item list-group-item-action border-left">Nuevo Empleado</a></li>
+                                <li><a href="{{route('administrarempleados')}}" class="list-group-item list-group-item-action border-left">Administrar Empleados</a></li>                            
                             </ul>
                         </ul>                  
                         
