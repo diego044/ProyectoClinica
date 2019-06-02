@@ -25,19 +25,19 @@ Route::get('adminhorarios', function () {
 });
 
 Route::get('adminmedicos', function () {
-    return view('AdministrarHorarios');
+    return view('AdministrarMedicos');
 });
 
 Route::get('adminpacientes', function () {
     return view('AdministrarPaciente');
 });
 
-Route::get('adminmedico', function () {
+Route::get('agregarmedico', function () {
     return view('AgregarMedico');
 });
 
-Route::get('adminhorarios/programacionhorarios', function () {
-    return view('programacionhorarios');
+Route::get('programacionhorarios', function () {
+    return view('ProgramacionHorarios');
 });
 
 

@@ -1,4 +1,4 @@
-@extends('layouts.plantilla')
+@extends('plantillas.Admin-plantilla')
 
 @section('title', 'Menu')
 

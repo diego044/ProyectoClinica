@@ -14,43 +14,66 @@
 
 <br/>
 
-<div>
-    <label>Filtros de Busqueda :</label>
-    <div class="form-row">          
-        <div class="form-group col-md-2">
-        <select class="custom-select" style="width: 200px">
-              <option selected>Selecione Medico:</option>
-              <option value="1">medico1</option>
-              <option value="2">medico2</option>
-            <option value="3">medico3</option>
-          </select>
-      
-      <div class="form-row">          
-                <div class="form-group col-md-2">    
-          <select class="custom-select" style="width: 200px">
-              <option selected>Selecione Especialidad:</option>
-              <option value="1">pediatria</option>
-              <option value="2">odonto</option>
-            <option value="3">medico3</option>
-          </select>
-        </div>
-    </div>
-        <div class="form-group col-md-3">                         
-                <input id="date" type="date">                      
-        </div>
-        <select class="custom-select" style="width: 200px">
-              <option selected>Selecione Turno:</option>
-              <option value="1">noche</option>
-              <option value="2">mañana</option>
-        </select>
-        <a href="Horarios">Añadir nueva programacion de Horario</a>
 
-     
-    <input type="submit" value="Buscar">
+<a href="programacionhorarios">Añadir nueva programacion de Horario</a>
+<div class="card border-light" >
+    <div class="card-header">Filtros de Busqueda :</div>
+    <div class="card-body">
+        <form>
+            <div class="form-row">          
+                <div class="form-group col-md-2">
+                    <select class="custom-select">
+                        <option selected>Selecione Medico:</option>
+                        <option value="1">medico1</option>
+                        <option value="2">medico2</option>
+                        <option value="3">medico3</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                        <select class="custom-select">
+                            <option selected>Selecione Especialidad:</option>
+                            <option value="1">Turno1</option>
+                            <option value="2">Turno2</option>                           
+                        </select>
+                </div>
+                <div class="form-group col-md-2">                         
 
-</div>
+                        <div class="input-group">
+                                <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">De: </span>
+                                </div>
+                                <input type="date" class="form-control"> 
+                        </div>
+                        <br/>                      
+                </div>
+                        <br/>
+                  <div class="form-group col-md-2">
+                    <select class="custom-select">
+                        <option selected>Selecione turno :</option>
+                        <option value="1">medico1</option>
+                        <option value="2">medico2</option>
+                        <option value="3">medico3</option>
+                    </select>
+                </div>
 
+                <div class="form-group col-md-2">
+                    <select class="custom-select">
+                        <option selected>Selecione estado :</option>
+                        <option value="1">medico1</option>
+                        <option value="2">medico2</option>
+                        <option value="3">medico3</option>
+                    </select>
+                </div>
 
+                <div class="form-group col-md-2">
+                        <button type="submit" class="btn btn-info">Registrar</button>
+                </div>   
+                </div>
+                
+                          
+                
+            </div>            
+        </form>
 
         <table class="table table-striped">
                 <thead>
